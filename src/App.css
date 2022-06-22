@@ -1,9 +1,55 @@
 .App{
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 5px;
+}
+
+/* Input */
+form{
+  max-width: 520px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.search-input{
+  width: 70%;
+  padding: 20px 40px;
+  border: none;
+  border-radius: 13px 0 0 13px;
+  color: #fff;
+  background-color: #3399FF;
+  font-size: 1.6rem;
+}
+
+::placeholder{
+  color: #fff
+}
+
+.search-button{
+  width: 25%;
+  border: none;
+  font-size: 1.6rem;
+  background-image: linear-gradient(to right, #00b4db, #0083b0);
+  color: #fff;
+  border-radius: 0px 13px 13px 0px;
+  padding: 12px;
+  padding-top: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  box-sizing: border-box;
+
+}
+
+.search-button:hover{
+  opacity: .8;
+  border-bottom: 1px solid white;
 }
 
 .main{
@@ -36,7 +82,7 @@
   text-align: start;
 }
 
-button{
+.degrees-button{
   border-style: none;
   font-size: 1.2rem;
   background-color: #3399FF;
@@ -47,7 +93,7 @@ button{
   cursor: pointer;
 }
 
-button:hover{
+.degrees-button:hover{
   background-color: #fff;
   color: #3399FF;
   border: 2px solid #3399FF;
